@@ -37,6 +37,8 @@ function playRound(userPlay) {
         userPlay = 2;
     }
 
+    console.log("Comp chose " + comp);
+
     if(comp === userPlay) {
         return 0;
     } else if(comp === 0 && userPlay === 1) {
@@ -48,9 +50,9 @@ function playRound(userPlay) {
     } else if(comp === 1 && userPlay === 2) {
         return 1;
     } else if(comp === 2 && userPlay === 0) {
-        return 2;
-    } else if(comp === 2 && userPlay === 1) {
         return 1;
+    } else if(comp === 2 && userPlay === 1) {
+        return 2;
     }
 
     return 0;
@@ -58,8 +60,6 @@ function playRound(userPlay) {
 
 function calculateWinner(str) {
     let res = playRound(str);
-
-    console.log(res);
 
     if(res === 0) {
         resultPara.textContent = "It's a draw!";
