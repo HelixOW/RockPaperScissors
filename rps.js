@@ -40,17 +40,17 @@ function playRound(userPlay) {
     if(comp === userPlay) {
         return 0;
     } else if(comp === 0 && userPlay === 1) {
-        return 2;
+        return 1;
     } else if(comp === 0 && userPlay === 2) {
-        return 1;
+        return 2;
     } else if(comp === 1 && userPlay === 0) {
-        return 1;
+        return 2;
     } else if(comp === 1 && userPlay === 2) {
-        return 2;
-    } else if(comp === 2 && userPlay === 0) {
         return 1;
-    } else if(comp === 2 && userPlay === 1) {
+    } else if(comp === 2 && userPlay === 0) {
         return 2;
+    } else if(comp === 2 && userPlay === 1) {
+        return 1;
     }
 
     return 0;
