@@ -1,0 +1,52 @@
+div#game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#game button {
+    background-color: rgb(25, 131, 126);
+    color: white;
+    border: none;
+    font-size: 128px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+div#game button:hover {
+    background-color: rgb(14, 82, 78);
+}
+
+body {
+    background: linear-gradient(45deg, rgb(45, 45, 45), rgb(35, 35, 35));
+}
+
+.wrapper {
+    position: relative;
+    height: 99%;
+}
+
+#title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: white;
+}
+
+#subtitle {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#result {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+
+}
